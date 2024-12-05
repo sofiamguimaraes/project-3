@@ -1,4 +1,5 @@
 format: jb-book
-root: lab_12
+root: index
 chapters:
-  - file: project_3
+  - file: project_1
+  - file: project_2
