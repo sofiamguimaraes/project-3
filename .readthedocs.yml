@@ -1,9 +1,12 @@
 version: 2
+
 sphinx:
-  configuration: _config.yml
+  configuration: _config.yml  # Matches the location of your Jupyter Book config
+
 conda:
-  file: environment.yml
+  file: environment.yml  # The environment file in your repo
+
 build:
-  os: ubuntu-20.04
+  os: ubuntu-22.04  # Ensure compatibility
   tools:
     python: "3.9"
