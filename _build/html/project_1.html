@@ -488,6 +488,15 @@ In this cell, we load the dataset from a public source.</p>
 <p>5 rows × 34 columns</p>
 </div></div></div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;vscode+jupyterlab+notebook_connected&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
 <p>then filter out unnecessary columns to focus on <code class="docutils literal notranslate"><span class="pre">borough_name</span></code> and <code class="docutils literal notranslate"><span class="pre">major_n</span></code>, which represent the borough names and the numeric values of major crime committed in schools in each borough.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
