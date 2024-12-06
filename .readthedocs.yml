@@ -4,7 +4,7 @@ sphinx:
   configuration: _config.yml  # Matches the location of your Jupyter Book config
 
 conda:
-  file: environment.yml  # The environment file in your repo
+  file: environment.yml
 
 build:
   os: ubuntu-22.04  # Ensure compatibility
