@@ -1,12 +1,14 @@
+# https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html#id2
 version: 2
 
-sphinx:
-  configuration: _config.yml  # Matches the location of your Jupyter Book config
+build:
+  os: ubuntu-lts-latest
+  tools:
+    python: mambaforge-latest
+  # https://jupyterbook.org/en/stable/publish/readthedocs.html
+  jobs:
+    pre_build:
+      - jupyter-book config sphinx .
 
 conda:
-  file: environment.yml
-
-build:
-  os: ubuntu-22.04  # Ensure compatibility
-  tools:
-    python: "3.9"
+  environment: environment.yml
