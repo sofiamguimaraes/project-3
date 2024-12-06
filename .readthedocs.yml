@@ -9,6 +9,8 @@ build:
   jobs:
     pre_build:
       - jupyter-book config sphinx .
+      sed -i 's/_build\/html/$READTHEDOCS_OUTPUT\/html/' _config.yml  # Update the output path for Read the Docs
+
 
 conda:
   environment: environment.yml
